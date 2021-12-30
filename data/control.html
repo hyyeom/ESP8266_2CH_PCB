@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>ESP IOT DASHBOARD</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script src="control.js"></script>
+</head>
+<body>
+	<div class="topnav">
+		<h1>Smart IOT Home</h1>
+	</div>
+	<div class="content">
+		<div class="card-grid">
+			<div class="card">
+				<p class="card-title">Temperature</p>
+				<p class="reading"><span id="temp"></span> &deg;C</p>
+			</div>
+			<div class="card">
+				<p class="card-title">Humidity</p>
+				<p class="reading"><span id="hum"></span> &percnt;</p>
+			</div>
+			<div class="card">
+				<p class="card-title">Refresh</p>
+				<p id="mySwitch1">
+					<button class="button-off" id="btn1" onclick="readData()">Refresh</button>
+				</p>
+			</div>	
+			<div class="card">
+				<p class="card-title">RED Switch 1</p>
+				<p id="Sw1Switch">
+					<button class="button-on" id="submit" onclick="Sw1click()">Turn <span id="sw1state"></span></button>
+				</p>
+    		</div>
+			<div class="card">
+				<p class="card-title">YELLOW Switch 2</p>
+				<p id="Sw2Switch">
+					<button class="button-on" id="submit" onclick="Sw2click()">Turn <span id="sw2state"></span></button>
+				</p>
+    		</div>
+		</div>
+	</div>
+</body>
+</html>
